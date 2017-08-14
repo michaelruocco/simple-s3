@@ -1,0 +1,36 @@
+{
+  "awsRegion": "eu-west-1",
+  "eventName": "ObjectCreated:Put",
+  "eventSource": "aws:s3",
+  "eventTime": "2017-04-21T17:16:09.754Z",
+  "eventVersion": "2.0",
+  "requestParameters": {
+    "sourceIPAddress": "151.230.149.4"
+  },
+  "responseElements": {
+    "x-amz-id-2": "rDSWnQqK4MfvK1Z15NFj4QGqiMolxa0V2t90+CMpLT61o7EckX2TgJAP4AycYDtHCHEvfPDizyE=",
+    "x-amz-request-id": "A29A5A8B750E5BFD"
+  },
+  "s3": {
+    "configurationId": "ee81e0bc-ff2c-42ae-97d0-aecdc8bf6af2",
+    "bucket": {
+      "name": "test-bucket",
+      "ownerIdentity": {
+        "principalId": "A56HG003L456Z"
+      },
+      "arn": "arn:aws:s3:::test-bucket"
+    },
+    "object": {
+      "key": "test-file.txt",
+      "size": 4658,
+      "eTag": "c0521a872559237b55cf0d793c4a1853",
+      "versionId": null,
+      "sequencer": "0058FA3E59B55267D3",
+      "urlDecodedKey": "BSSTPGOODS.2017021523033440.TXT"
+    },
+    "s3SchemaVersion": "1.0"
+  },
+  "userIdentity": {
+    "principalId": "A56HG003L456Z"
+  }
+}
