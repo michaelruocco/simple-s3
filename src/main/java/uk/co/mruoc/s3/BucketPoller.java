@@ -12,8 +12,6 @@ public class BucketPoller {
     private final int maxAttempts;
     private final int delay;
 
-    private int attempts;
-
     public BucketPoller(SimpleS3 simpleS3) {
         this(simpleS3, new DefaultRetryConfigBuilder().build());
     }
@@ -26,7 +24,7 @@ public class BucketPoller {
 
     public String pollBucketForContent(ObjectDefinition definition) {
         String output = null;
-        attempts = 0;
+        int attempts = 0;
         while (!isComplete(output, attempts)) {
             output = getOutput(definition);
             attempts++;
