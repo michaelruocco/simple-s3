@@ -2,7 +2,6 @@ package uk.co.mruoc.s3;
 
 import com.amazonaws.services.s3.model.AmazonS3Exception;
 import org.junit.Test;
-import uk.co.mruoc.retry.DefaultRetryConfig;
 import uk.co.mruoc.retry.DefaultRetryConfig.DefaultRetryConfigBuilder;
 import uk.co.mruoc.retry.RetryConfig;
 
