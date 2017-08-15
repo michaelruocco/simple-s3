@@ -81,7 +81,7 @@ uploadArchives {
                 description 'Library containing useful classes for interacting and testing with S3 buckets'
                 groupId 'com.github.michaelruocco'
                 artifactId 'simple-s3'
-                version '1.0.0'
+                version '1.0.1'
                 url 'https://github.com/michaelruocco/simple-s3'
 
                 developers {
