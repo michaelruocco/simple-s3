@@ -2,6 +2,9 @@ package uk.co.mruoc.s3;
 
 import com.amazonaws.services.s3.model.AmazonS3Exception;
 import org.junit.Test;
+import uk.co.mruoc.retry.DefaultRetryConfig;
+import uk.co.mruoc.retry.DefaultRetryConfig.DefaultRetryConfigBuilder;
+import uk.co.mruoc.retry.RetryConfig;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
@@ -13,7 +16,8 @@ public class BucketPollerTest {
 
     private final ObjectDefinition definition = new ObjectDefinition("my-bucket", "my-key");
     private final SimpleS3 simpleS3 = mock(SimpleS3.class);
-    private final BucketPoller bucketPoller = new BucketPoller(simpleS3);
+    private final RetryConfig retryConfig = new DefaultRetryConfigBuilder().setDelay(50).build();
+    private final BucketPoller bucketPoller = new BucketPoller(simpleS3, retryConfig);
 
     @Test(expected = AmazonS3Exception.class)
     public void shouldThrowAmazonS3ExceptionIfKeyNotFoundException() {
