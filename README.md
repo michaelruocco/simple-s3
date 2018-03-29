@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/michaelruocco/simple-s3.svg?branch=master)](https://travis-ci.org/michaelruocco/simple-s3)
 [![Coverage Status](https://coveralls.io/repos/github/michaelruocco/simple-s3/badge.svg?branch=master)](https://coveralls.io/github/michaelruocco/simple-s3?branch=master)
+[![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/github/michaelruocco/simple-s3/maven-metadata.xml.svg)](http://repo1.maven.org/maven2/com/github/michaelruocco/simple-s3)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/eae94662e4c74b8292e7d8a50a032099)](https://www.codacy.com/app/michaelruocco/simple-s3?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=michaelruocco/simple-s3&amp;utm_campaign=Badge_Grade)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.michaelruocco/simple-s3/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.michaelruocco/simple-s3)
 
 This library provides classes to make interacting with S3 buckets as simple
 as possible, as well as providing classes to make it easier to test code
